@@ -1,4 +1,13 @@
 #myTimer {
-    color: red;
-    font-size: 64px;
+    font-size: 24px;
+}
+.firstButtons{
+    justify-content: center;
+    display: flex;
+    gap : 20px;
+}
+.secondButtons{
+    justify-content: center;
+    display: flex;
+    gap : 20px;
 }

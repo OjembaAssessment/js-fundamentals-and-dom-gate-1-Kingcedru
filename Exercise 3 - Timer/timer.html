@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="timer.css">
+    <link href="./timer.css" rel="stylesheet">
 </head>
 
 <body>
@@ -10,7 +10,25 @@
     <h2>Exercise 3 - Timer</h2>
 
     <div id="myTimer">
-        Your timer should go here!
+        <div class="firstButtons">
+            <div class="subtract">
+                <button id="subBtn">-</button>
+            </div>
+            <div class="timeCount">
+                <h1 id="countText">0</h1>
+            </div>
+            <div class="addButton">
+                <button id="addBtn">+</button>
+            </div>
+        </div>
+        <div class="secondButtons">
+            <div class="start">
+                <button id="startBtn">Start</button>
+            </div>
+            <div class="Reset">
+                <button id="resetBtn">Reset</button>
+            </div>
+        </div>
     </div>
 
     <script src="./timer.js"></script>

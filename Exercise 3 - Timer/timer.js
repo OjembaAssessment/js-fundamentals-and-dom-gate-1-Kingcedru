@@ -4,6 +4,7 @@ let startbtn = document.getElementById('startBtn');
 let resetbtn = document.getElementById('resetBtn')
 let timeToStart;
 let counter
+let stopBtn
 
 function start(timeToStart) {
     counter = timeToStart    
@@ -25,9 +26,12 @@ let secondsTo = setInterval(() =>{
 
 startbtn.addEventListener('click',() =>{
     timeToStart = parseInt(prompt('Enter Number of seconds'))
-    start(timeToStart)
-    let stop = startbtn.textContent = "Stop"
-    stop.addEventListener('click',stopBtn())
+         start(timeToStart)
+        startbtn.textContent = "Stop"
+        startbtn.addEventListener("click",()=>{
+            console.log("hello")
+        })
+
 })
 
 addbtn.addEventListener('click',function(){
@@ -39,9 +43,9 @@ subbtn.addEventListener('click',function(){
 })
 resetbtn.addEventListener('click',function(){
     counter = 0
+    startbtn.textContent = "Start"
     })
 
-function stopBtn(){
-    startbtn.textContent = "Stop"
-}
+
+
 console.log("Exercise 3 - Timer");
